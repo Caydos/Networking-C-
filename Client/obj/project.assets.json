@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SimpleTCP/1.0.24": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SimpleTCP.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SimpleTCP.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SimpleTCP": "1.0.24"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleTCP/1.0.24": {
+      "sha512": "mQEKbXruksWRmKeUuID7S+Ltg092EiWXwnomnVYohkY+/rTRiIp4PUTE/bdBEj6oh1gIt0lp4l0GBlwtOhqU5w==",
+      "type": "package",
+      "path": "simpletcp/1.0.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/SimpleTCP.dll",
+        "simpletcp.1.0.24.nupkg.sha512",
+        "simpletcp.nuspec"
+      ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Shared >= 1.0.0",
+      "SimpleTCP >= 1.0.24"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Etudiant1\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Etudiant1\\Desktop\\Networking C#\\Client\\Client.csproj",
+      "projectName": "Client",
+      "projectPath": "C:\\Users\\Etudiant1\\Desktop\\Networking C#\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\Etudiant1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Etudiant1\\Desktop\\Networking C#\\Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Etudiant1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\Etudiant1\\Desktop\\Networking C#\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Etudiant1\\Desktop\\Networking C#\\Shared\\Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "SimpleTCP": {
+            "target": "Package",
+            "version": "[1.0.24, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'SimpleTCP 1.0.24' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net8.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "SimpleTCP",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
